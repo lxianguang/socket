@@ -61,7 +61,7 @@ ufw allow IP to any port 31415
 ~~~~
 where IP is the ip of the device which runs the fortran code.
 
-In the driver.f90 you should set the correct ip of the device which runs the python code.
+In the driver.f90 file you should set the correct ip of the device which runs the python code.
 ~~~~
 host = "xxx.xxx.xxx.xxx"//achar(0)
 ~~~~
