@@ -1,0 +1,4 @@
+gcc -g -O3 -Wall -c -o sockets.o sockets.c
+gfortran -g -O3 -Wall -ffree-line-length-none -ffixed-line-length-none -c fsockets.f90 -o fsockets.o
+gfortran -g -O3 -Wall -ffree-line-length-none -ffixed-line-length-none -c driver.f90 -o driver.o
+gfortran -g -O3 -Wall -ffree-line-length-none -ffixed-line-length-none -o driver.x sockets.o fsockets.o driver.o
