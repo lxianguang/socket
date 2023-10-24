@@ -56,8 +56,12 @@ The host name in /etc/hosts must be the same as that in /etc/hostname.
 If you want to transfer data across devices, you should set the correct IP address before the host name in /etc/hosts.
 
 The default port is set to 31415, So the device which runs the python code needs to open this port by 
+~~~~
 ufw allow IP to any port 31415
-where IP is the ip of the device which runs the fortran code
+~~~~
+where IP is the ip of the device which runs the fortran code.
 
-In the driver.f90 you should set the correct ip of the device which runs the python code
+In the driver.f90 you should set the correct ip of the device which runs the python code.
+~~~~
 host = "xxx.xxx.xxx.xxx"//achar(0)
+~~~~
